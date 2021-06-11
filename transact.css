@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    
+}
+body{
+    background: #191919;
+    background-size: cover;
+    text-decoration: none;
+}
+h1{
+    position: relative;
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    color: #edf0f1;
+}
+.transacttable {
+    border-collapse: collapse;/* reduces the space b/w the cells */
+    margin:25px 0;
+    font-size: 0.9em;
+    width: 80%;
+    color: black;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 15);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+}
+.transacttable thead tr{
+    background-color: #009879;
+    color: #edf0f1;
+    text-align: center;
+    font-weight: bold;
+}
+.transacttable td{
+    padding: 7px 7px;
+}
+.transacttable tbody tr{
+    border-bottom:1px solid #dddddd;
+}
+ /* .custtable tbody tr:nth-child(even){
+    background-color: #f3f3f3;
+} */
+.transacttable tbody tr{
+    background-color: #dddddd;
+}
+.transacttable tbody tr{
+    border-bottom: 2px solid #009879;
+} 
+.transacttable tbody td{
+    text-align: center;
+}
+.transfer{
+    display: flex;
+    border:2px solid #009879;
+    border-radius: 10px;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: 0 auto;
+}
+.transfer label{
+    color: #edf0f1;
+    font-weight: bolder;
+}
+.transfer input[type="number"], .transfer select{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border:2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+  }
+  /*This gives the animation effect.*/
+  .transfer input[type="number"]:focus, .transfer select:focus{
+    width:280px;
+    border-color: #2ecc71;
+  }
+  
+  .transfer #Btn{
+    font-weight: bolder;
+    background: none;
+    display: inline-block;
+    margin: 20px auto;
+    text-align: center;
+    border:2px solid #2ecc71;
+    padding:14px 40px;
+    color:white;
+    border-radius:24px;
+    transition: 0.25s;
+    cursor: pointer;
+  }
+  
+  .transfer #Btn:hover{
+    background: #2ecc71;
+  }
+.transfer select{
+    background: #191919;
+}
+
+@media(max-width:852px){
+    h1{
+        font-weight: 600;
+        font-size: 20px;
+    }
+}

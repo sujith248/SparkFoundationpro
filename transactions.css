@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    
+}
+body{
+    background: #191919;
+    background-size: cover;
+    text-decoration: none;
+}
+h1{
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    color: #edf0f1;
+}
+.transactionstable {
+    border-collapse: collapse;/* reduces the space b/w the cells */
+    margin:25px 0;
+    width: 80%;
+    color: black;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 15);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+}
+.transactionstable thead tr{
+    background-color: #009879;
+    color: #edf0f1;
+    text-align: center;
+    font-weight: bold;
+}
+.transactionstable td{
+    padding: 7px;
+}
+.transactionstable tbody tr{
+    border-bottom:1px solid #dddddd;
+}
+ /* .custtable tbody tr:nth-child(even){
+    background-color: #f3f3f3;
+}
+ .custtable tbody tr:nth-child(odd){
+    background-color: #dddddd;
+} */
+.transactionstable tbody tr{
+    background-color: #dddddd;
+}
+.transactionstable tbody tr{
+    border-bottom: 2px solid #009879;
+} 
+.transactionstable tbody td{
+    text-align: center;
+}
+@media(max-width:852px){
+    h1{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .transactionstable{
+        font-size: 10px;
+    }
+    .transactionstable td{
+        padding: 5px;
+    }
+}

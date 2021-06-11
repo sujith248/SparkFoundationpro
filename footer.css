@@ -1,0 +1,38 @@
+.social{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    bottom: 5px;
+    left:35%;
+    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.social li{
+    list-style: none;
+}
+.social li a{
+    display: inline-block;
+    filter: invert(1);
+    margin-right: 20px;
+    transform: scale(0.6);
+    transition: 0.5s;
+}
+.social li h3{
+    color: #f3f3f3;
+    font-weight: bolder;
+}
+.social li a:hover{
+    transform: scale(0.6) translateY(-15px);
+}
+@media (max-width:852px){
+    .social{
+        left: 30%;
+    }
+}
+@media (max-width:752px){
+    .social{
+        left: 25%;
+    }
+}
